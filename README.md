@@ -21,3 +21,7 @@
 - 学生番号 ```\sutudentid```
 - 卒業年度 ```\gyear```
 - 提出日 ```\date```
+
+## 出力例
+
+```thesis_sample.pdf```は，```thesis_sample.tex```をコンパイルした```thesis_sample.dvi```から```dvipdfmx```によりPDF化した例です．
