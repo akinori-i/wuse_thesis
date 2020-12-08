@@ -173,8 +173,7 @@ fukuyasu@wakayama-u.ac.jp
     % 以下の命令を有効にしてみて下さい．
     % ただし，同時に\begin{document}より前にある\usepackage{graphicx}
     % も有効にする必要があります．
-    % 以下の例ではついでに四角で囲っています．
-    %\framebox{\includegraphics[width=5cm,clip]{/usr/local/share/ghostscript/7.07/examples/tiger.ps}}
+    %\includegraphics[width=5cm,clip]{/usr/local/share/ghostscript/7.07/examples/tiger.ps}
   \caption{図の例}
   \label{fig:sample}
 \end{figure}
@@ -183,6 +182,11 @@ fukuyasu@wakayama-u.ac.jp
 EPS形式やPDF形式の図を文章の中に取り込むことができる．
 この場合，\verb|\begin{document}|の前に\verb|\usepackage{graphicx}|を
 追加する．
+
+なお，図表の配置は基本的には\LaTeX{}が決めるので，思った位置に入らない
+からといって無理に場所を指定するのはよくない．
+どうしても位置を固定したい場合には，すべての文章が書きあがった後に指定
+するとよい\footnote{そうしないと文章を書き換えるたびに，位置がずれる可能性がある}．
 
 \section{表}
 
@@ -248,19 +252,38 @@ EPS形式やPDF形式の図を文章の中に取り込むことができる．
 %% 参考文献
 %%
 \begin{thebibliography}{99}
+
 \bibitem{wusethesis}
-    和歌山大学システム工学部卒業論文用スタイルファイル，
-    ``\url{https://github.com/fukuyasu/wuse_thesis}''．
+  福安直樹，
+  卒業論文スタイルファイル（和歌山大学システム工学部用），\\
+  \url{https://github.com/fukuyasu/wuse_thesis}．
+
+\bibitem{tex}
+  Knuth, D.,
+  Remarks to Celebrate the Publication of Computers \& Typesetting,
+  TUGboat, Vol.7, No.2, pp.95--98, 1986.
+
 \bibitem{latex}
-    奥村晴彦，\LaTeX 入門---美文書作成のポイント---，技術評論社，1993．
+  Lamport, L.,
+  文書処理システム\LaTeXe{}，
+  ピアソン・エデュケーション，1999，
+  \newblock{}阿瀬はる美 訳．
+
+\bibitem{latex_j}
+  奥村晴彦，\LaTeX{}入門 ---美文書作成のポイント---，技術評論社，1993．
+
 \bibitem{latex2e}
-    奥村晴彦，黒木裕介，[改定第6版] \LaTeXe~美文書作成入門，技術評論社，2013．
-\bibitem{texbasic}
-    OfficeMASA，神代英俊，長島秀行 著，\TeX の基礎，
-    ソフトバンクパブリッシング，2002．
+  奥村晴彦，黒木裕介，[改定第6版] \LaTeXe~美文書作成入門，技術評論社，2013．
+
 \bibitem{latexcomp}
-    M. Goossens, F. Mittelbach, A. Samarin 共著，
-    アスキー書籍編集部 監訳，The \LaTeX コンパニオン，アスキー出版局，1998．
+  Goossens, M., Mittelbach, F. and Samarin, A.,
+  The \LaTeX{}コンパニオン，アスキー出版局，1998，
+  \newblock{}アスキー書籍編集部 監訳．
+
+\bibitem{texwiki}
+  \LaTeX 入門 --- \TeX{} Wiki，\\
+  \url{https://texwiki.texjp.org/?LaTeX%E5%85%A5%E9%96%80}，
+  2020年12月8日閲覧．
 \end{thebibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
